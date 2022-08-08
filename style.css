@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    text-decoration: none;
+    padding: none;
+    margin: none;
+    background-color: #2E2D32;
+}
+
+
+
+.card {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.free {
+    background-color: #2E2D32;
+    background-image: url("img/img-back-free.svg");
+
+    /* background-position-y: 220px; */
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    box-shadow: -9px 9px 20px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.free:hover {
+    background-position-y: 220px;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+
+
+.free h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #FAEDF3;
+    padding: 20px;
+    text-align: left;
+}
+
+.free ul li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FAEDF3;
+
+
+}
+
+.btn-start {
+    background-color: #FAEDF3;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px 10px 10px 10px;
+    transition: 500ms;
+}
+
+.btn-start:hover {
+    box-shadow: 0px 0px 12px 6px rgba(255, 255, 255, 0.25);
+    transition: 500ms;
+}
+
+
+/* gold */
+
+.gold {
+    background-color: #2E2D32;
+    background-image: url("img/img-back-gold.svg");
+
+    /* background-position-y: 220px; */
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    box-shadow: -9px 9px 20px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+
+.gold:hover {
+    background-position-y: 220px;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+
+
+.gold h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #FAEDF3;
+    padding: 20px;
+    text-align: left;
+}
+
+.gold ul li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FAEDF3;
+
+
+}
+
+
+/* diamont */
+
+.diamont {
+    background-color: #2E2D32;
+    background-image: url("img/img-back-diamont.svg");
+
+    /* background-position-y: 220px; */
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    box-shadow: -9px 9px 20px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+
+.diamont:hover {
+    background-position-y: 220px;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+
+
+.diamont h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #FAEDF3;
+    padding: 20px;
+    text-align: left;
+}
+
+.diamont ul li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FAEDF3;
+
+
+}
