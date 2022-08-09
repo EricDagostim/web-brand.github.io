@@ -6,8 +6,73 @@ body {
     padding: none;
     margin: none;
     background-color: #2E2D32;
+    overflow-x: hidden;
 }
 
+.icon-vaso {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: #2E2D32;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.init-content {
+    margin-top: -25px;
+}
+
+.init-img {
+    margin-top: -25px;
+}
+
+.init-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #FAEDF3;
+    margin-left: 100px;
+}
+
+.init-content p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FAEDF3;
+    margin-left: 150px;
+    margin-right: 15%;
+
+}
+
+.init-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #FAEDF3;
+    margin-left: 150px;
+
+}
+
+.init-content button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FAEDF3;
+    background-color: #5B2F87;
+    border: none;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    transition: 500ms;
+
+}
+
+.init-content button:hover {
+    box-shadow: -8px 6px 10px 2px rgba(0, 0, 0, 0.25);
+    margin-left: 152px;
+    transition: 500ms
+}
 
 
 .card {
@@ -19,7 +84,7 @@ body {
 .free {
     background-color: #2E2D32;
     background-image: url("img/img-back-free.svg");
-
+    opacity: 90%;
     /* background-position-y: 220px; */
     background-position-y: 0px;
     background-repeat: no-repeat;
@@ -77,10 +142,11 @@ body {
 
 .gold {
     background-color: #2E2D32;
-    background-image: url("img/img-back-gold.svg");
-
+    background-image: url("img/img-back-free.svg");
+    transform: scale(1.09);
     /* background-position-y: 220px; */
     background-position-y: 0px;
+
     background-repeat: no-repeat;
     box-shadow: -9px 9px 20px 6px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -119,7 +185,9 @@ body {
 
 .diamont {
     background-color: #2E2D32;
-    background-image: url("img/img-back-diamont.svg");
+    background-image: url("img/img-back-free.svg");
+    opacity: 90%;
+
 
     /* background-position-y: 220px; */
     background-position-y: 0px;
@@ -154,4 +222,47 @@ body {
     color: #FAEDF3;
 
 
+}
+
+
+.menor {
+    animation: diminui 6s;
+
+}
+
+.descarga {
+    animation: rotate 6s infinite;
+
+
+
+}
+
+@keyframes diminui {
+    0% {
+        transform: rotateZ(0deg);
+        transition: 500ms;
+        transform: scale(1);
+    }
+
+
+    100% {
+        transform: rotateZ(50deg);
+        transition: 500ms;
+        transform: scale(0.0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+
+
+    }
+
+
+    100% {
+        transform: rotateZ(360deg);
+
+
+    }
 }

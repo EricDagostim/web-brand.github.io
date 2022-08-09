@@ -9,11 +9,35 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="vanilla-tilt.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
 </head>
 
 <body>
+
+    <img class="icon-vaso" src="img\icon-vaso.svg" alt="">
+
+    <div class="row" style="background-color: #5B2F87; height: 80px;"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 init-content">
+                <h1>JESUS SALVA, <br> GITWARE FAZ BACKUP!</h1>
+                <p>Você sonha imaginando um mundo, um mundo onde suas idéias e projetos mais loucos estão muito bem
+                    guardados, seguros, quentinhos e disponíveis 24/7.</p>
+                <h2>SIM, É ISSO QUE A GENTE FAZ!</h2>
+                <button>start</button>
+
+            </div>
+            <div class="col-5 init-img">
+                <img src="img\img-background.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    <hr style="color: #fff">
+
 
     <div class="container">
         <div class="row">
@@ -72,7 +96,7 @@
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 
 
@@ -81,18 +105,27 @@
 <script type="text/javascript" src="vanilla-tilt.js"></script>
 <script type="text/javascript">
     VanillaTilt.init(document.querySelector(".car"), {
-        max: 3,
-        speed: 500,
+        max: 50,
+        speed: 100,
         perspective: 1000,
         transition: true,
         glare: true,
-        "glare-prerender": false,
-        "max-glare": 0.2,
-        easing: "cubic-bezier(.03,.98,.52,.99)"
+
     });
 
     //It also supports NodeList
     // VanillaTilt.init(document.querySelectorAll(".card"));
+</script>
+
+<script>
+    $(".icon-vaso").click(function () {
+        $("body").addClass("menor");
+        $("body").addClass("descarga");
+        $("body").css({
+            'overflow-y': 'hidden'
+        })
+
+    })
 </script>
 
 </html>
